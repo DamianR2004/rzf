@@ -1,7 +1,6 @@
 <script>
 	import { title } from 'process';
-	import '$lib/styles/global.css'
-
+	import '$lib/styles/global.css';
 
 	let { children } = $props();
 </script>
