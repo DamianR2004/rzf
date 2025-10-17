@@ -1,8 +1,6 @@
 <script>
-	import { title } from 'process';
 	import '$lib/styles/global.css';
-
-	let { children } = $props();
+	let { children } = $props() 
 </script>
 
 <svelte:head>

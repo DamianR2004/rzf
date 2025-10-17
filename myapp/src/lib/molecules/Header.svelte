@@ -1,8 +1,12 @@
-<nav>
+<section>
+    <h1>Raimond Zoeter Fotografie</h1>
+    <svg></svg>
     <ul>
-        <li><a href="#home"></a></li>
-        <li><a href="/portfolio"></a></li>
-        <li><a href="#over-mij"></a></li>
-        <li><a href="#contact"></a></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
     </ul>
-</nav>
+</section>
