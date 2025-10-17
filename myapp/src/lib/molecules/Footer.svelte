@@ -26,12 +26,12 @@
         
         <h3>Bedrijfsgegevens</h3>
         <ul>
-            <li><p><strong>BTW</strong>:NL123456789B01</p></li>
-            <li><p><strong>KvK</strong>:12345678</p></li>
+            <li><p><strong>BTW:</strong> NL123456789B01</p></li>
+            <li><p><strong>KvK:</strong> 12345678</p></li>
         </ul>
        
         <h3>Navigatie</h3>
-        <ul>
+        <ul>    
             <li><a href="#home" aria-label="Home"></a>Home</li>
             <li><a href="#portfolio" aria-label="Portfolio"></a>Portfolio</li>
             <li><a href="#over-mij" aria-label="Over mij"></a>Over mij</li>

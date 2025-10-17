@@ -1,6 +1,6 @@
-<section>
+<section id="home">
     <h1>Raimond Zoeter Fotografie</h1>
-    <svg></svg>
+        <svg></svg>
     <ul>
         <li><img src="" alt=""></li>
         <li><img src="" alt=""></li>
