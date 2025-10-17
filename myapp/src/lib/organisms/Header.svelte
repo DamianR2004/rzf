@@ -1,5 +1,6 @@
-<section id="portfolio">
-    <h2>Recent Werk</h2>
+<section id="home">
+    <h1>Raimond Zoeter Fotografie</h1>
+        <svg></svg>
     <ul>
         <li><img src="" alt="f1"></li>
         <li><img src="" alt="f2"></li>
@@ -10,10 +11,7 @@
     </ul>
 
     <div>
-        <a href="/portfolio" aria-label="Bekijk meer werk">
-            Zie meer
-            <svg></svg>  
-        </a>
+        <a href="#portfolio">Scroll</a>
+        <svg></svg>
     </div>
 </section>
-
