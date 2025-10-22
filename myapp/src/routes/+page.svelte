@@ -1,9 +1,10 @@
 <script> 
-    import { Navigatie, Header, Footer, Recent, Over, Opdrachtgevers, Ervaringen } from "$lib/index.js"; 
+    import {Cursor, Navigatie, Home, Footer, Recent, Over, Opdrachtgevers, Ervaringen } from "$lib/index.js"; 
 </script> 
 
-<Header /> 
-<Navigatie /> 
+<Cursor />
+<Navigatie />
+<Home /> 
 <Recent />
 <Over />
 <Ervaringen />

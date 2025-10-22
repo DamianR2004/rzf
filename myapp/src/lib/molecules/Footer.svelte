@@ -26,8 +26,8 @@
         
         <h3>Bedrijfsgegevens</h3>
         <ul>
-            <li><p><strong>BTW:</strong> NL123456789B01</p></li>
-            <li><p><strong>KvK:</strong> 12345678</p></li>
+            <li><p><strong>BTW:</strong> NL003441168B12</p></li>
+            <li><p><strong>KvK:</strong> 80418538</p></li>
         </ul>
        
         <h3>Navigatie</h3>
@@ -46,11 +46,51 @@
             <li><img src="" alt=""></li>
             <li><img src="" alt=""></li>
         </ul>
-    
-        
-        <section>
+
+        <div>
             <h4><a href="mailto:info@raimondzoeterfotografie.nl" aria-label="Link naar e-mailadres van Raimond Zoeter Fotografie">info@raimondzoeterfotografie.nl</a></h4>
-        </section>
+        </div>
 
     </section>
+
+    <div>
+        <p>© 2025 Raimond Zoeter Fotografie</p>
+        <p>Designed and developed by <a href="https://www.bydr.studio" aria-label="Link naar de website van de ontwikkelaar">bydr.studio</a></p>
+    </div>
 </footer>
+
+<style>
+
+    
+
+    section:nth-of-type(1) {
+        display: flex;
+        flex-direction: row;
+        background-color: #161616;
+        height: 90vh;
+    }
+
+    section h2, h3, h4, p, ul, li, a {
+        color: white;
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 15px;
+    }
+
+    div p, a{
+        color: black;
+        font-size: .875rem;
+    }
+
+    @media (max-width: 768px) {
+        div {
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            margin: 10px;
+        }
+    }
+</style>

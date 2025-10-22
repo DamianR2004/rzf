@@ -1,12 +1,12 @@
 <section id="portfolio">
     <h2>Recent Werk</h2>
     <ul>
-        <li><img src="" alt="f1"></li>
-        <li><img src="" alt="f2"></li>
-        <li><img src="" alt="f3"></li>
-        <li><img src="" alt="f4"></li>
-        <li><img src="" alt="f5"></li>
-        <li><img src="" alt="f6"></li>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
+        <article><a href="/portfolio"><img src="" alt=""></a><h2>Hoi</h2></article>
     </ul>
 
     <div>
@@ -17,3 +17,9 @@
     </div>
 </section>
 
+<style>
+    section{
+        height: 100dvh;
+        width: 100dvw;
+    }
+</style>
