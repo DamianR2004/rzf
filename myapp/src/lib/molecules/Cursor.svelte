@@ -11,7 +11,7 @@
     };
     window.addEventListener("mousemove", moveCursor);
 
-    const interactiveSelector = "img, a, .link";
+    const interactiveSelector = "img, a, .link, article";
     const interactives = document.querySelectorAll(interactiveSelector);
 
     interactives.forEach((el) => {
@@ -34,26 +34,24 @@
   {/if}
 </div>
 
-
 <style>
-    .cursor {
-        background: #000;
-        width: 3rem;
-        height: 3rem;
-        z-index: 70;
-        position: fixed;
-        pointer-events: none;
-        border-radius: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 0.8rem;
-    }
+  .cursor {
+    background: #000;
+    width: 3rem;
+    height: 3rem;
+    z-index: 70;
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+  }
 
-    :global(.link):hover {
-        z-index: 1600;
-        color: white;
-    }
+  :global(.link):hover {
+    z-index: 1600;
+  }
 </style>

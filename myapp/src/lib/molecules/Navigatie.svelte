@@ -26,13 +26,21 @@ header {
 ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 3rem;
     list-style: none;
 }
 
+li{
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: white;      
-    text-decoration: none;        
+    text-decoration: none;     
+    margin: 5px;  
+    padding: 1.25rem; 
 }
 
 a:hover {

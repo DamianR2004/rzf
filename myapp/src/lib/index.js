@@ -1,3 +1,10 @@
+export { default as Instagram } from "./atoms/icons/Instagram.svelte";
+export { default as LinkedIn } from "./atoms/icons/LinkedIn.svelte";
+export { default as ArrowLeft } from "./atoms/icons/ArrowLeft.svelte";
+export { default as ArrowRight } from "./atoms/icons/ArrowRight.svelte";
+export { default as ArrowDown } from "./atoms/icons/ArrowDown.svelte";
+export { default as Close } from "./atoms/icons/Close.svelte";
+
 
 export { default as Footer } from "./molecules/Footer.svelte";
 export { default as Navigatie } from "./molecules/Navigatie.svelte";
@@ -10,7 +17,7 @@ export { default as Home } from "./organisms/Home.svelte";
 export { default as Opdrachtgevers } from "./organisms/Opdrachtgevers.svelte";
 export { default as Ervaringen } from "./organisms/Ervaringen.svelte";
 
-export { default as logoPng } from "./images/logoplaceholder.png";
+export { default as logo } from "./images/logo.svg";
 
 export { default as vrijWerkMelleAvif } from "./images/vrij_werk_melle.avif";
 export { default as vrijWerkMelleJpg } from "./images/vrij_werk_melle.jpg";

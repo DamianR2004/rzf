@@ -1,3 +1,7 @@
+<script>
+    export let data
+</script>
+
 <section id="portfolio">
     <h2>Recent Werk</h2>
     <ul>

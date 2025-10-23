@@ -1,13 +1,23 @@
-<section id="over-mij">
-    <h2>Over mij</h2>
-    <img src="" alt="Foto van Raimond Zoeter">
-    <p>Mijn werkstijl kenmerkt zich door aandacht voor de mens, voor detail en voor de techniek. Ik stel mensen moeiteloos op hun gemak en ben ontspannen in de omgang. Dat zie je terug op de foto’s die ik maak. Daarnaast let ik op details en zet ik graag net een stapje extra. Ik hou ervan te spelen met licht om de foto naar een hoger niveau te tillen. 
-Van interieur- en foodfotografie  tot bedrijfsmatige reportages en portretten; met ruim 20 jaar ervaring in de studio en op locatie ben ik zeer breed inzetbaar.</p>
+<section id="about">
+  <h2>About Me</h2>
+    <p>hou</p>
+    <p>No information available.</p>
 </section>
 
 <style>
-    section{
-        height: 100dvh;
-        width: 100dvw;
-    }
+  section#about {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 </style>

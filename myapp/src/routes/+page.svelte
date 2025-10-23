@@ -3,10 +3,5 @@
 </script> 
 
 <Cursor />
-<Navigatie />
 <Home /> 
-<Recent />
-<Over />
-<Ervaringen />
-<Opdrachtgevers />
 <Footer />

@@ -1,96 +1,141 @@
+<script>
+    import { Instagram, LinkedIn } from "$lib/index.js";
+</script>
+
+
 <footer id="contact">
-    <section>
-        <h2>Contact</h2>
+    <h2>Contact</h2>
+        <section>
+                <ul>
+                    <li><h3>Socials</h3></li>
+                    <li>
+                        <Instagram />
+                        <a href="https://www.instagram.com/raimondzoeterfotografie/" aria-label="Instagram van Raimond Zoeter Fotografie">Instagram</a>
+                    </li>
+                    <li>
+                        <LinkedIn />
+                        <a href="https://www.linkedin.com/in/raimond-zoeter-8b016649/" aria-label="LinkedIn van Raimond Zoeter">LinkedIn</a>
+                    </li>
+                </ul>
         
-        <h3>Socials</h3>
-        <ul>
-            <li>
-                <svg>
+                <ul>
+                    <li><h3>Bedrijfsinfo</h3></li>
+                    <li><p><strong>BTW:</strong> NL003441168B12</p></li>
+                    <li><p><strong>KvK:</strong> 80418538</p></li>
+                </ul>
 
-                </svg>
-                <a href="https://www.instagram.com/raimondzoeterfotografie/" aria-label="Instagram van Raimond Zoeter Fotografie">
-                    Instagram
-                </a>
-                
-            </li>
-            <li>
-                <svg>
+                <ul>
+                    <li><h3>Navigatie</h3></li>
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="#over-mij" aria-label="Over mij">Over mij</a></li>
+                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                </ul>
 
-                </svg>
-                <a href="https://www.linkedin.com/in/raimond-zoeter-8b016649/" aria-label="LinkedIn van Raimond Zoeter">
-                    LinkedIn
-                </a>
-                
-            </li>
-        </ul>
-        
-        <h3>Bedrijfsgegevens</h3>
-        <ul>
-            <li><p><strong>BTW:</strong> NL003441168B12</p></li>
-            <li><p><strong>KvK:</strong> 80418538</p></li>
-        </ul>
-       
-        <h3>Navigatie</h3>
-        <ul>    
-            <li><a href="#home" aria-label="Home"></a>Home</li>
-            <li><a href="#portfolio" aria-label="Portfolio"></a>Portfolio</li>
-            <li><a href="#over-mij" aria-label="Over mij"></a>Over mij</li>
-            <li><a href="#contact" aria-label="Contact"></a>Contact</li>
-        </ul>
-
-        <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        </ul>
-
-        <div>
-            <h4><a href="mailto:info@raimondzoeterfotografie.nl" aria-label="Link naar e-mailadres van Raimond Zoeter Fotografie">info@raimondzoeterfotografie.nl</a></h4>
-        </div>
-
+                <ul>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
     </section>
 
     <div>
         <p>© 2025 Raimond Zoeter Fotografie</p>
-        <p>Designed and developed by <a href="https://www.bydr.studio" aria-label="Link naar de website van de ontwikkelaar">bydr.studio</a></p>
+        <p>Designed and developed <a href="https://www.bydr.studio" aria-label="Link naar de website van de ontwikkelaar">bydr.studio</a></p>
     </div>
+
 </footer>
 
 <style>
-
-    
-
-    section:nth-of-type(1) {
-        display: flex;
-        flex-direction: row;
-        background-color: #161616;
-        height: 90vh;
+    footer{
+        background-color: #221F20;
     }
+    section {
+		display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        height: 60dvh;
+    }   
 
-    section h2, h3, h4, p, ul, li, a {
+    h2, h3, p, ul, li, a, strong {
         color: white;
     }
 
-    div{
-        display: flex;
-        justify-content: space-between;
-        margin: 0px 15px;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    p{
+        margin: 0;
     }
 
-    div p, a{
-        color: black;
-        font-size: .875rem;
+    li{
+        gap: .5rem;
+    }
+
+    ul:nth-of-type(1) li{
+        display: flex;
+        align-items: center;
+    }
+
+    ul:nth-of-type(4){
+        background-color: aliceblue;
+        height: 250px;
+        width: 250px;
+    }
+    :global(svg){
+        width: 3rem;
+        height: auto;
+    }
+    div:nth-of-type(1){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        background-color: white;
+
+        & a{
+            text-decoration: underline;
+        }
+        
+        & a, p{
+            color: black;
+        }
     }
 
     @media (max-width: 768px) {
-        div {
-            flex-direction: column;
-            align-items: center;
-            gap: .5rem;
-            margin: 10px;
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        ul{
+            margin-right: 0;
+        }
+
+        ul:nth-of-type(4){
+            height: 150px;
+            width: 150px;
+        }
+
+        li{
+            line-height: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        a, p, strong{
+            font-size: 1rem;
+        }
+
+        :global(svg){
+            width: 2rem;
+            height: auto;
         }
     }
+
 </style>
