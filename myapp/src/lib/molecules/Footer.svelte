@@ -52,6 +52,7 @@
     footer{
         background-color: #221F20;
     }
+
     section {
 		display: flex;
         justify-content: space-between;
@@ -66,6 +67,7 @@
     ul {
         list-style: none;
         padding: 0;
+        
     }
     p{
         margin: 0;
@@ -73,6 +75,7 @@
 
     li{
         gap: .5rem;
+        line-height: 3rem;
     }
 
     ul:nth-of-type(1) li{
@@ -105,7 +108,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 968px) {
         section {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

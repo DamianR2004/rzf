@@ -4,4 +4,3 @@
 
 <Cursor />
 <Home /> 
-<Footer />
