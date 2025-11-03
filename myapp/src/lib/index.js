@@ -2,7 +2,6 @@ export { default as Instagram } from "./atoms/icons/Instagram.svelte";
 export { default as LinkedIn } from "./atoms/icons/LinkedIn.svelte";
 export { default as ArrowLeft } from "./atoms/icons/ArrowLeft.svelte";
 export { default as ArrowRight } from "./atoms/icons/ArrowRight.svelte";
-export { default as ArrowDown } from "./atoms/icons/ArrowDown.svelte";
 export { default as Close } from "./atoms/icons/Close.svelte";
 
 
@@ -31,3 +30,26 @@ export { default as troubadourAAVif } from "./images/troubadoura.avif";
 export { default as troubadourAJpg } from "./images/troubadoura.jpg";
 export { default as troubadourBAVif } from "./images/troubadourb.avif";
 export { default as troubadourBJpg } from "./images/troubadourb.jpg";
+
+export { default as bouwrijkLogo } from "./images/opdrachtgevers/bouwrijk.png";
+export { default as clijfLogo } from "./images/opdrachtgevers/clijf.png";
+export { default as codeblauwLogo } from "./images/opdrachtgevers/codeblauwlogo.png";
+export { default as contentLogo } from "./images/opdrachtgevers/content.png";
+export { default as donaldosLogo } from "./images/opdrachtgevers/donaldos.png";
+export { default as hippoLogo } from "./images/opdrachtgevers/hippo.png";
+export { default as ilsatLogo } from "./images/opdrachtgevers/ilsat.png";
+export { default as intercheeseLogo } from "./images/opdrachtgevers/intercheeselogo.png";
+export { default as jumpretailLogo } from "./images/opdrachtgevers/jumpretaillogo.png";
+export { default as lawinedesignLogo } from "./images/opdrachtgevers/lawinedesignlogo.png";
+export { default as leenbakkerLogo } from "./images/opdrachtgevers/leenbakkerlogo.png";
+export { default as mboamersfoortLogo } from "./images/opdrachtgevers/mboamersfoortlogo.png";
+export { default as noaberLogo } from "./images/opdrachtgevers/noaberlogo.png";
+export { default as plenekantoorinrichtingLogo } from "./images/opdrachtgevers/plenekantoorinrichtinglogo.png";
+export { default as pwrLogo } from "./images/opdrachtgevers/pwrlogo.png";
+export { default as steetsLogo } from "./images/opdrachtgevers/steetslogo.png";
+export { default as studiovoorhuisLogo } from "./images/opdrachtgevers/studiovoorhuislogo.png";
+export { default as thermocetLogo } from "./images/opdrachtgevers/thermocetlogo.png";
+export { default as troubadourLogo } from "./images/opdrachtgevers/troubadour.png";
+export { default as vanuffelenLogo } from "./images/opdrachtgevers/vanuffelenlogo.png";
+export { default as vikingliftenLogo } from "./images/opdrachtgevers/vikingliftenlogo.png";
+export { default as vmeLogo } from "./images/opdrachtgevers/vmelogo.png";

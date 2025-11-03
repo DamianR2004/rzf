@@ -12,13 +12,13 @@
 <style>
 header {
     position: fixed;
-    bottom: 5%;              
+    bottom: 3%;              
     width: 100%;       
     display: flex;
     justify-content: center; 
     align-items: center;   
     background: transparent;
-    z-index: 1000;
+    z-index: 100;
     background: transparent;
     mix-blend-mode: difference; 
 }

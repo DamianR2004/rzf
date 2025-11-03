@@ -3,4 +3,7 @@
 </script> 
 
 <Cursor />
+<Navigatie />
 <Home /> 
+<Over />
+<Opdrachtgevers />
