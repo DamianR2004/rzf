@@ -9,7 +9,6 @@ export { default as Footer } from "./molecules/Footer.svelte";
 export { default as Navigatie } from "./molecules/Navigatie.svelte";
 export { default as Cursor } from "./molecules/Cursor.svelte";
 
-
 export { default as Recent } from "./organisms/Recent.svelte";
 export { default as Over } from "./organisms/Over.svelte";
 export { default as Home } from "./organisms/Home.svelte";
@@ -17,6 +16,7 @@ export { default as Opdrachtgevers } from "./organisms/Opdrachtgevers.svelte";
 export { default as Ervaringen } from "./organisms/Ervaringen.svelte";
 
 export { default as logo } from "./images/logo.svg";
+export { default as portret } from "./images/raimondzoeter.jpeg";
 
 export { default as vrijWerkMelleAvif } from "./images/vrij_werk_melle.avif";
 export { default as vrijWerkMelleJpg } from "./images/vrij_werk_melle.jpg";

@@ -17,7 +17,7 @@
     interactives.forEach((el) => {
       el.addEventListener("mouseenter", () => {
         cursorText = el.dataset.cursor || "";
-        gsap.to(cursor, { scale: 1.7, duration: 0.6 });
+        gsap.to(cursor, { scale: 2, duration: 0.6 });
       });
 
       el.addEventListener("mouseleave", () => {
@@ -36,10 +36,10 @@
 
 <style>
   .cursor {
-    background: #000;
-    width: 3rem;
-    height: 3rem;
-    z-index: 70;
+    background: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 100;
     position: fixed;
     pointer-events: none;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     font-size: 0.8rem;
   }
 
-  :global(.link):hover {
+  :global(a):hover {
     z-index: 1600;
   }
 </style>
