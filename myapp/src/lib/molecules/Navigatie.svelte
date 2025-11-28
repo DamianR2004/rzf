@@ -1,15 +1,60 @@
-<header>
+<script>
+    import { onMount } from 'svelte';
+
+    let activeSection = '';
+
+    onMount(() => {
+        const sections = document.querySelectorAll('section[id], #contact');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.id) {
+                    activeSection = '#' + entry.target.id;
+                }
+            });
+        }, { 
+            threshold: 0.1 
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
+
+<header class:hidden={activeSection === '#contact'}>
     <nav>
         <ul>
-            <li><a href="#home" aria-label="Home" class="link">Home</a></li>
-            <li><a href="#portfolio" aria-label="Portfolio" class="link">Portfolio</a></li>
-            <li><a href="#over-mij" aria-label="Over Mij" class="link">Over Mij</a></li>
-            <li><a href="#contact" aria-label="Contact" class="link">Contact</a></li>
+            <li>
+                <a href="#home" 
+                   class="link" 
+                   class:active={activeSection === '#home'} 
+                   aria-label="Home">Home</a>
+            </li>
+            <li>
+                <a href="#portfolio" 
+                   class="link" 
+                   class:active={activeSection === '#portfolio'} 
+                   aria-label="Portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#over-mij" 
+                   class="link" 
+                   class:active={activeSection === '#over-mij'} 
+                   aria-label="Over Mij">Over Mij</a>
+            </li>
+            <li>
+                <a href="#contact" 
+                   class="link" 
+                   class:active={activeSection === '#contact'} 
+                   aria-label="Contact">Contact</a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <style>
+/* 4. Base State */
 header {
     position: fixed;
     bottom: 3%;              
@@ -18,9 +63,20 @@ header {
     justify-content: center; 
     align-items: center;   
     background: transparent;
-    z-index: 100;
-    background: transparent;
+    z-index: 12;
     mix-blend-mode: difference; 
+
+    /* Animation Settings */
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* 5. Hidden State */
+header.hidden {
+    transform: translateY(200%); /* Slides down */
+    opacity: 0;
+    pointer-events: none;
 }
 
 ul {
@@ -31,7 +87,7 @@ ul {
     list-style: none;
 }
 
-li{
+li {
     margin: 0;
     padding: 0;
 }
@@ -43,8 +99,7 @@ a {
     padding: 1.25rem; 
 }
 
-a:hover {
+a.active {
     text-decoration: underline;
-    transition: .25s ease-in-out; 
 }
 </style>

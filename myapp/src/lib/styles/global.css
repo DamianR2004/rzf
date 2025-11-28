@@ -4,6 +4,12 @@
   font-display: swap;
 } 
 
+@font-face {
+  font-family: "Playwrite";
+  src: url($lib/fonts/Playwrite.ttf) format('truetype');
+  font-display: swap;
+}
+
 :root{
   --color-background-main: #f0f0f0;
   --color-background-secondary: #161616;
@@ -22,6 +28,7 @@
 
 html{
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 body {
@@ -31,7 +38,7 @@ body {
   width: 100vw;
   margin: 0;
   background: #ffffff;
-  cursor: none;
+  cursor: none !important;
   font-weight: normal;
 }
 
@@ -60,4 +67,18 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@view-transition {
+  navigation: auto;
 }

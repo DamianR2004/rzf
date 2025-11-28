@@ -39,11 +39,11 @@
     background: black;
     width: 2.5rem;
     height: 2.5rem;
-    z-index: 100;
+    z-index: 12;
     position: fixed;
     pointer-events: none;
     border-radius: 50%;
-    inset: 0;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,4 +54,13 @@
   :global(a):hover {
     z-index: 1600;
   }
+
+  @media (max-width: 768px) {
+    .cursor {
+      display: none;
+    }
+  }
+
 </style>
+
+

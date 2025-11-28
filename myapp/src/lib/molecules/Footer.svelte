@@ -99,7 +99,7 @@
        margin: 0;
         & a{
             color: lightgray;
-            font-size: 4.5vw;
+            font-size: 5.5vw;
             transition: .4s ease-in-out;
         }
         & a:hover{
@@ -148,7 +148,7 @@
         }
 
         a, p, strong{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         :global(svg){

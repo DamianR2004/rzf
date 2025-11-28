@@ -24,6 +24,7 @@
     height: 545px;
     background-color: #161616;
     border-radius: 10px;
+    z-index: 11;
   }
 
   p {
@@ -35,6 +36,7 @@
   }
 
   p i{
+    font-family: "Playwrite", sans-serif;
     text-decoration: underline;
     font-weight: 600;
   }
