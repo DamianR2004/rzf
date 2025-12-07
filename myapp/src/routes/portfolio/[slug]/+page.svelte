@@ -23,10 +23,11 @@
     gap: 1rem;
   }
 
-  picture img {
+  picture{
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+    mask-image: linear-gradient(black, transparent);
   }
 </style>

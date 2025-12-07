@@ -9,11 +9,12 @@
     <Navigatie />
     <Home /> 
     
-    <Recent albums={data.recenteProjecten} />
+    <!-- <Recent albums={data.recenteProjecten} /> -->
     
-    <Ervaringen data={data.ervaringen} />
+
 
     <Over />
+    <!-- <Ervaringen data={data.ervaringen} /> -->
     <Opdrachtgevers />
     <Footer />
 </main>

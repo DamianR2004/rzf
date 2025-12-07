@@ -22,10 +22,6 @@
   --font-size-links: 1.953rem;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 html{
   scroll-behavior: smooth;
   cursor: none !important;
@@ -37,6 +33,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  padding: 0;
   background: #ffffff;
   cursor: none !important;
   font-weight: normal;

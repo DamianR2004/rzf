@@ -78,11 +78,11 @@
 
 <div class="preloader">
   <div class="preloader-images">
-    <div class="img"><img src={vrijWerkMelleJpg} fetchpriority="high" alt="" /></div>
-    <div class="img"><img src={vrijWerkModelJpg} fetchpriority="high" alt="" /></div>
-    <div class="img"><img src={vrijWerkFoodJpg} fetchpriority="high" alt="" /></div>
-    <div class="img"><img src={beach7Jpg} fetchpriority="high" alt="" /></div>
-    <div class="img"><img src={troubadourAJpg} fetchpriority="high" alt="" /></div>
+    <div class="img"><img src={vrijWerkMelleJpg} alt="" /></div>
+    <div class="img"><img src={vrijWerkModelJpg} alt="" /></div>
+    <div class="img"><img src={vrijWerkFoodJpg} alt="" /></div>
+    <div class="img"><img src={beach7Jpg} alt="" /></div>
+    <div class="img"><img src={troubadourAJpg} alt="" /></div>
   </div>
 </div>
 
