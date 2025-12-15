@@ -21,7 +21,9 @@
 {#if isHidden}
   <main class="blackout">
     <div class="content">
-      <h1 class="logo">Raimond Zoeter Fotografie</h1>
+      <h1 class="logo">
+				<img src="/images/logo.svg" alt="Raimond Zoeter Fotografie">
+			</h1>
       <p>Aan deze website wordt momenteel gewerkt.</p>
       <div class="spinner"></div>
     </div>
