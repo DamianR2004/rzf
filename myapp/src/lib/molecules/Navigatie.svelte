@@ -54,7 +54,6 @@
 </header>
 
 <style>
-/* 4. Base State */
 header {
     position: fixed;
     bottom: 3%;              
@@ -66,19 +65,15 @@ header {
     z-index: 12;
     mix-blend-mode: difference; 
 
-    /* Animation Settings */
     transform: translateY(0);
     opacity: 1;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
-/* 5. Hidden State */
 header.hidden {
     transform: translateY(200%); /* Slides down */
     opacity: 0;
     pointer-events: none;
-}
-
+}  
 ul {
     display: flex;
     justify-content: center;

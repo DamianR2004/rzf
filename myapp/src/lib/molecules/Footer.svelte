@@ -2,7 +2,6 @@
     import { Instagram, LinkedIn } from "$lib/index.js";
 </script>
 
-
 <footer id="contact">
     <h2>Contact</h2>
         <section>

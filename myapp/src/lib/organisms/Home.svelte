@@ -91,7 +91,7 @@
   <section id="home">
     <h1 class="visually-hidden">Raimond Zoeter Fotografie</h1>
     <article data-name="Vrij werk">
-      <a href="/">
+      <a href="/portfolio/studio-ww">
         <picture>
           <source srcset={vrijWerkMelleAvif} type="image/avif" />
           <img src={vrijWerkMelleJpg} width="800" 

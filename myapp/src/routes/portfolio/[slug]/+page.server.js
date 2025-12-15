@@ -1,37 +1,58 @@
-const WP_BASE_URL = 'https://damianromeijn.nl';
-const API_URL = `${WP_BASE_URL}/wp-json/wp/v2`;
+import { error } from '@sveltejs/kit';
+import { WP_API_URL } from '$env/static/private'; 
 
-export async function load({ fetch, params }) {
-  const albumSlug = params.slug;
+export const load = async ({ params, fetch }) => {
+  const { slug } = params;
 
-  const response = await fetch(`${API_URL}/album?slug=${albumSlug}`);
-  const albumList = await response.json();
-  console.log('albumList:', albumList);
+  // We halen de content op (waar de foto's in zitten) en de featured image
+  const query = `
+    query GetAlbumImages($slug: ID!) {
+      album(id: $slug, idType: SLUG) {
+        title
+        content(format: RENDERED)
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+      }
+    }
+  `;
 
-  if (!albumList || albumList.length === 0) {
-    return { status: 404, error: 'Album niet gevonden' };
+  const response = await fetch(WP_API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query, variables: { slug } }),
+  });
+
+  const result = await response.json();
+  
+  if (!result.data?.album) throw error(404, 'Album niet gevonden');
+
+  const { title, content, featuredImage } = result.data.album;
+  let media = [];
+
+  // 1. Voeg eerst de uitgelichte afbeelding toe
+  if (featuredImage?.node) {
+    media.push({
+      src: featuredImage.node.sourceUrl,
+      alt: featuredImage.node.altText || title
+    });
   }
 
-  const album = albumList[0];
-  const albumId = album.id;
+  // 2. Vis alle andere afbeeldingen uit de HTML-tekst
+  if (content) {
+    const matches = [...content.matchAll(/src="([^"]+)"/g)];
+    
+    matches.forEach(match => {
+      const url = match[1];
+      // Voeg toe als hij nog niet in de lijst staat
+      if (!media.some(item => item.src === url)) {
+        media.push({ src: url, alt: title });
+      }
+    });
+  }
 
-  const contentResponse = await fetch(`${API_URL}/album/${albumId}?_embed&acf`);
-  const albumData = await contentResponse.json();
-  console.log('albumData:', albumData);
-
-  let photoGallery = albumData?.acf?.photo_gallery?.photo_gallery?.[0] || [];
-  console.log('PhotoGallery array:', photoGallery);
-
-  const mediaItems = photoGallery.map(img => ({
-    type: 'image',
-    src: img.full_image_url,         // gebruik full_image_url
-    alt: img.alt_text || albumData.title.rendered
-  }));
-
-  console.log('Processed mediaItems:', mediaItems);
-
-  return {
-    title: albumData.title.rendered,
-    media: mediaItems
-  };
-}
+  return { title, media };
+};

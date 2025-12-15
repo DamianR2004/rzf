@@ -1,15 +1,16 @@
 <script>
-  export let data;
+  let { data } = $props();
 </script>
 
 <h2>{data.title}</h2>
 
 <section class="gallery">
   <h2 class="visually_hidden">{data.title}</h2>
+  
   {#each data.media as item}
     <picture>
-        <source srcset={item.src} type="image/avif">
-        <source srcset={item.src} type="image/webp">
+      <source srcset={item.src} type="image/avif">
+      <source srcset={item.src} type="image/webp">
       <img src={item.src} alt={item.alt} loading="lazy">
     </picture>
   {/each}
@@ -23,11 +24,16 @@
     gap: 1rem;
   }
 
-  picture{
+  picture {
+    display: block;
+    width: 100%;
+  }
+
+  img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    mask-image: linear-gradient(black, transparent);
   }
-</style>
+
+  </style>
