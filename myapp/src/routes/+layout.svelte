@@ -21,13 +21,12 @@
 
 {#if isHidden}
   <main class="blackout">
-    <div class="content">
+    <section class="content">
       <h1 class="logo">
 				<img src="{logo}" alt="Raimond Zoeter Fotografie">
 			</h1>
       <p>Aan deze website wordt momenteel gewerkt.</p>
-      <div class="spinner"></div>
-    </div>
+    </section>
   </main>
 
 {:else}
@@ -49,8 +48,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,20 +71,5 @@
   p {
     color: #888;
     font-size: 0.9rem;
-  }
-
-  /* Een simpel laad-icoontje voor het effect */
-  .spinner {
-    margin: 20px auto;
-    width: 40px;
-    height: 40px;
-    border: 3px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    border-top-color: #fff;
-    animation: spin 1s ease-in-out infinite;
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
   }
 </style>
