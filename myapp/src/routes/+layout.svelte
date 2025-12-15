@@ -2,6 +2,7 @@
 	import '$lib/styles/global.css';
   import { dev } from '$app/environment';
   let { children } = $props();
+	import { logo } from "$lib/index.js";
 
   // --- INSTELLINGEN ---
   // Zet deze op TRUE zolang je nog aan het bouwen bent.
@@ -22,7 +23,7 @@
   <main class="blackout">
     <div class="content">
       <h1 class="logo">
-				<img src="/images/logo.svg" alt="Raimond Zoeter Fotografie">
+				<img src="{logo}" alt="Raimond Zoeter Fotografie">
 			</h1>
       <p>Aan deze website wordt momenteel gewerkt.</p>
       <div class="spinner"></div>
