@@ -78,25 +78,26 @@
 
 <div class="preloader">
   <div class="preloader-images">
-    <div class="img"><img src={vrijWerkMelleJpg} alt="" /></div>
-    <div class="img"><img src={vrijWerkModelJpg} alt="" /></div>
-    <div class="img"><img src={vrijWerkFoodJpg} alt="" /></div>
-    <div class="img"><img src={beach7Jpg} alt="" /></div>
-    <div class="img"><img src={troubadourAJpg} alt="" /></div>
+    <div class="img"><img src={vrijWerkMelleAvif} alt="" /></div>
+    <div class="img"><img src={vrijWerkModelAvif} alt="" /></div>
+    <div class="img"><img src={vrijWerkFoodAvif} alt="" /></div>
+    <div class="img"><img src={beach7Avif} alt="" /></div>
+    <div class="img"><img src={troubadourAAVif} alt="" /></div>
   </div>
 </div>
 
   <img src={logo} class="logo" alt="Logo van Raimond Zoeter Fotografie" />
 
   <section id="home">
-    <h1 class="visually-hidden">Raimond Zoeter Fotografie</h1>
+    <h1 class="visually_hidden">Raimond Zoeter Fotografie</h1>
     <article data-name="Vrij werk">
       <a href="/portfolio/studio-ww">
         <picture>
           <source srcset={vrijWerkMelleAvif} type="image/avif" />
-          <img src={vrijWerkMelleJpg} width="800" 
-          height="600" 
-          decoding="async" 
+          <img src={vrijWerkMelleJpg} 
+          width="800" 
+          height="600"
+          fetchpriority="high"
           data-cursor="Klik!" 
           alt="Portretfoto van Melle" />
         </picture>
@@ -107,9 +108,10 @@
       <a href="/">
         <picture>
           <source srcset={vrijWerkModelAvif} type="image/avif" />
-          <img src={vrijWerkModelJpg} width="800" 
+          <img src={vrijWerkModelJpg} 
+          width="800" 
           height="600" 
-          decoding="async" 
+          loading="lazy"
           data-cursor="Klik!" 
           alt="Vrij werk voor Model fotografie" />
         </picture>
@@ -120,9 +122,10 @@
       <a href="/">
         <picture>
           <source srcset={beach7Avif} type="image/avif" />
-          <img src={beach7Jpg} width="800" 
-          height="600" 
-          decoding="async" 
+          <img src={beach7Jpg} 
+          width="800" 
+          height="600"
+          loading="lazy"
           data-cursor="Klik!" 
           alt="Commercieel werk voor Beach7" />
         </picture>
@@ -133,9 +136,10 @@
       <a href="/">
         <picture>
           <source srcset={troubadourBAVif} type="image/avif" />
-          <img src={troubadourBJpg} width="800" 
+          <img src={troubadourBJpg} 
+          width="800" 
           height="600" 
-          decoding="async" 
+          loading="lazy"
           data-cursor="Klik!" 
           alt="Commercieel werk voor Troubadour" />
         </picture>
@@ -146,9 +150,10 @@
       <a href="/">
         <picture>
           <source srcset={troubadourAAVif} type="image/avif" />
-          <img src={troubadourAJpg} width="800" 
+          <img src={troubadourAJpg} 
+          width="800" 
           height="600" 
-          decoding="async" 
+          loading="lazy"
           data-cursor="Klik!" 
           alt="Commercieel werk voor Troubadour" />
         </picture>
@@ -160,8 +165,8 @@
         <picture>
           <source srcset={vrijWerkFoodAvif} type="image/avif" />
           <img src={vrijWerkFoodJpg} width="800" 
+          loading="lazy"
           height="600" 
-          decoding="async" 
           data-cursor="Klik!" 
           alt="Vrij werk voor Food fotografie" />
         </picture>

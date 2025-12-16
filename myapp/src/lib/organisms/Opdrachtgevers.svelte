@@ -75,7 +75,7 @@ section{
     max-width: 100%;
     display: flex;
     overflow: hidden;
-    gap: 2em;
+    gap: 4em;
 }
 .carousel::-webkit-scrollbar {
     display: none;
@@ -87,7 +87,6 @@ section{
     justify-content: center;
     gap: 4em;
     animation: spin 45s linear infinite;
-    padding-right: 1em;
     margin: 0;
     padding: 0;
 }
@@ -98,6 +97,8 @@ section{
 
 li{
     align-content: center;
+    gap: 1em;
+    justify-content: center;
 }
 
 @keyframes spin{

@@ -1,24 +1,27 @@
 <script>
     import { onMount } from 'svelte';
+    import { page } from '$app/stores'; // 1. Import the page store
 
     let activeSection = '';
 
     onMount(() => {
         const sections = document.querySelectorAll('section[id], #contact');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && entry.target.id) {
-                    activeSection = '#' + entry.target.id;
-                }
+        if (sections.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.target.id) {
+                        activeSection = '#' + entry.target.id;
+                    }
+                });
+            }, { 
+                threshold: 0.1 
             });
-        }, { 
-            threshold: 0.1 
-        });
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
     });
 </script>
 
@@ -26,27 +29,27 @@
     <nav>
         <ul>
             <li>
-                <a href="#home" 
+                <a href="/#home" 
                    class="link" 
-                   class:active={activeSection === '#home'} 
+                   class:active={$page.url.pathname === '/' && activeSection === '#home'} 
                    aria-label="Home">Home</a>
             </li>
             <li>
-                <a href="#portfolio" 
+                <a href="/portfolio" 
                    class="link" 
-                   class:active={activeSection === '#portfolio'} 
+                   class:active={$page.url.pathname === '/portfolio' || activeSection === '#portfolio'} 
                    aria-label="Portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#over-mij" 
+                <a href="/#over-mij" 
                    class="link" 
-                   class:active={activeSection === '#over-mij'} 
+                   class:active={$page.url.pathname === '/' && activeSection === '#over-mij'} 
                    aria-label="Over Mij">Over Mij</a>
             </li>
             <li>
-                <a href="#contact" 
+                <a href="/#contact" 
                    class="link" 
-                   class:active={activeSection === '#contact'} 
+                   class:active={$page.url.pathname === '/' && activeSection === '#contact'} 
                    aria-label="Contact">Contact</a>
             </li>
         </ul>

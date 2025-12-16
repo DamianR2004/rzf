@@ -45,7 +45,6 @@ h1{
 
 h2{
   font-size: 6vh;
-  padding: 0 5%;
 }
 
 h3{
@@ -56,17 +55,17 @@ p {
   font-size: var(--font-size-links);
 }
 
-a {
+/* a {
   font-size: var(--font-size-links);
   text-decoration: none;
   cursor: none;
-}
+} */
 
 a:hover {
   text-decoration: underline;
 }
 
-.visually-hidden {
+.visually_hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -74,8 +73,4 @@ a:hover {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-@view-transition {
-  navigation: auto;
 }
