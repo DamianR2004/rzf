@@ -4,11 +4,11 @@
 
 <section id="over-mij">
   <h2>Over mij</h2>
-  <div class="wrapper">
+  <article class="wrapper">
     <img src="{portret}" alt="Portret Raimond Zoeter" />
     <p>Mijn werkstijl kenmerkt zich door <i>aandacht</i> voor de mens, voor <i>detail</i> en voor de techniek. Ik stel mensen moeiteloos op hun <i>gemak</i> en ben <i>ontspannen</i> in de omgang. Dat zie je terug op de foto’s die ik maak. Daarnaast let ik op details en zet ik graag net een stapje extra. Ik hou ervan te spelen met <i>licht</i> om de foto naar een <i>hoger niveau</i> te tillen. 
        Van interieur- en foodfotografie  tot bedrijfsmatige reportages en portretten; met ruim <i>20 jaar</i> ervaring in de studio en op locatie ben ik zeer breed inzetbaar.</p>
-  </div>
+  </article>
 </section>
 
 <style>

@@ -1,5 +1,5 @@
 <script> 
-    import {Cursor, Navigatie, Home, Footer, Recent, Over, Opdrachtgevers, Ervaringen } from "$lib/index.js"; 
+    import {Cursor, Navigatie, Home, Footer, Recent, Over, Opdrachtgevers, Ervaringen, Albums } from "$lib/index.js"; 
     
     let { data } = $props(); 
 </script> 
@@ -8,8 +8,7 @@
     <Cursor />
     <Navigatie />
     <Home /> 
-    
-    <!-- <Recent albums={data.recenteProjecten} /> -->
+    <Recent {data} />
     
 
 

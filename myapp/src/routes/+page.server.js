@@ -1,10 +1,9 @@
 import { WP_API_URL } from '$env/static/private'; 
 
 export const load = async ({ fetch }) => {
-
   const query = `
-    query GetPortfolio {
-      albums(first: 100) {
+    query GetRecentPortfolio {
+      albums(first: 6) { 
         nodes {
           title
           slug
@@ -31,7 +30,7 @@ export const load = async ({ fetch }) => {
   const albums = albumsRaw.map(album => ({
     title: album.title,
     slug: album.slug,
-    src: album.featuredImage?.node?.sourceUrl,
+    cover: album.featuredImage?.node?.sourceUrl,
     alt: album.featuredImage?.node?.altText || album.title
   }));
 

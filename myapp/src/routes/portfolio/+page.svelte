@@ -26,7 +26,7 @@
         <picture>
         <source srcset={album.src} type="image/avif">
         <source srcset={album.src} type="image/webp">
-      <img src={album.src} alt={album.alt} loading="lazy">
+      <img src={album.src} alt={album.alt} loading="lazy" data-cursor="Klik!">
     </picture>
   </article>
         <h3>{album.title}</h3>
@@ -40,14 +40,13 @@
     padding: 0 0.5rem;
     font: 1.2em sans-serif #555;
   }
-
-  .breadcrumb ol {
+  ol {
     display: flex;
     list-style: none;
     justify-content: start;
   }
 
-  .breadcrumb li:not(:last-child)::after {
+  ol li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.5rem;
     content: ">";
@@ -62,6 +61,7 @@
 
   article:hover img {
     scale: 1.05;
+    z-index: 1;
   }
 
   article {
@@ -75,6 +75,7 @@
     height: 100%;
     object-fit: cover;
     transition: 0.25s;
+    z-index: 0;
   }
 
   h3{

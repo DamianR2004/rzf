@@ -4,10 +4,10 @@ export { default as ArrowLeft } from "./atoms/icons/ArrowLeft.svelte";
 export { default as ArrowRight } from "./atoms/icons/ArrowRight.svelte";
 export { default as Close } from "./atoms/icons/Close.svelte";
 
-
 export { default as Footer } from "./molecules/Footer.svelte";
 export { default as Navigatie } from "./molecules/Navigatie.svelte";
 export { default as Cursor } from "./molecules/Cursor.svelte";
+export {default as Albums } from "./molecules/Albums.svelte";
 
 export { default as Recent } from "./organisms/Recent.svelte";
 export { default as Over } from "./organisms/Over.svelte";

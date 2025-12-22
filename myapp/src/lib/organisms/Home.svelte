@@ -11,7 +11,7 @@
   onMount(() => {
     CustomEase.create("jump", "0.9, 0, 0.1, 1");
     
-    const articles = document.querySelectorAll('section#home article');
+    const articles = document.querySelectorAll('section#home article.home-img');
     const xTo = [];
     const yTo = [];
 
@@ -90,36 +90,34 @@
 
   <section id="home">
     <h1 class="visually_hidden">Raimond Zoeter Fotografie</h1>
-    <article data-name="Vrij werk">
+    <article class="home-img">
       <a href="/portfolio/studio-ww">
         <picture>
           <source srcset={vrijWerkMelleAvif} type="image/avif" />
           <img src={vrijWerkMelleJpg} 
           width="800" 
           height="600"
-          fetchpriority="high"
           data-cursor="Klik!" 
           alt="Portretfoto van Melle" />
         </picture>
       </a>
     </article>
 
-    <article data-name="Vrij werk">
-      <a href="/">
+    <article class="home-img">
+      <a href="/portfolio/diversen">
         <picture>
           <source srcset={vrijWerkModelAvif} type="image/avif" />
           <img src={vrijWerkModelJpg} 
           width="800" 
           height="600" 
-          loading="lazy"
           data-cursor="Klik!" 
           alt="Vrij werk voor Model fotografie" />
         </picture>
       </a>
     </article>
 
-    <article data-name="Beach7">
-      <a href="/">
+    <article class="home-img">
+      <a href="/portfolio/diversen">
         <picture>
           <source srcset={beach7Avif} type="image/avif" />
           <img src={beach7Jpg} 
@@ -132,43 +130,41 @@
       </a>
     </article>
 
-    <article data-name="Troubadour">
-      <a href="/">
+    <article class="home-img">
+      <a href="/portfolio/de-troubadour-interieurs">
         <picture>
           <source srcset={troubadourBAVif} type="image/avif" />
           <img src={troubadourBJpg} 
           width="800" 
           height="600" 
-          loading="lazy"
           data-cursor="Klik!" 
           alt="Commercieel werk voor Troubadour" />
         </picture>
       </a>
     </article>
 
-    <article data-name="Troubadour">
-      <a href="/">
+    <article class="home-img">
+      <a href="/portfolio/de-troubadour-interieurs">
         <picture>
           <source srcset={troubadourAAVif} type="image/avif" />
           <img src={troubadourAJpg} 
           width="800" 
           height="600" 
-          loading="lazy"
           data-cursor="Klik!" 
           alt="Commercieel werk voor Troubadour" />
         </picture>
       </a>
     </article>
 
-    <article data-name="Vrij werk">
-      <a href="/">
+    <article class="home-img">
+      <a href="/portfolio/food">
         <picture>
           <source srcset={vrijWerkFoodAvif} type="image/avif" />
-          <img src={vrijWerkFoodJpg} width="800" 
-          loading="lazy"
+          <img src={vrijWerkFoodJpg} 
+          width="800" 
           height="600" 
           data-cursor="Klik!" 
-          alt="Vrij werk voor Food fotografie" />
+          alt="Eten" />
         </picture>
       </a>
     </article>

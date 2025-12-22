@@ -45,7 +45,7 @@
     <picture>
       <source srcset={item.src} type="image/avif">
       <source srcset={item.src} type="image/webp">
-      <img src={item.src} alt={item.alt} loading="lazy">
+      <img src={item.src} alt={item.alt} loading="lazy" data-cursor="Klik!">
     </picture>
   {/each}
 </section>

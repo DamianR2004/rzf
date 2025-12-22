@@ -11,7 +11,7 @@
     };
     window.addEventListener("mousemove", moveCursor);
 
-    const interactiveSelector = "img, a, .link, article";
+    const interactiveSelector = "img, picture, a, .link, article";
     const interactives = document.querySelectorAll(interactiveSelector);
 
     interactives.forEach((el) => {
@@ -39,7 +39,7 @@
     background: black;
     width: 2.5rem;
     height: 2.5rem;
-    z-index: 12;
+    z-index: 9999;
     position: fixed;
     pointer-events: none;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     font-size: 0.8rem;
   }
 
-  :global(a):hover {
+  :global(a img):hover {
     z-index: 1600;
   }
 
