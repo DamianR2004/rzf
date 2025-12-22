@@ -11,7 +11,7 @@
   onMount(() => {
     CustomEase.create("jump", "0.9, 0, 0.1, 1");
     
-    const articles = document.querySelectorAll('section#home article.home-img');
+    const articles = document.querySelectorAll('section#home article');
     const xTo = [];
     const yTo = [];
 
@@ -90,7 +90,7 @@
 
   <section id="home">
     <h1 class="visually_hidden">Raimond Zoeter Fotografie</h1>
-    <article class="home-img">
+    <article>
       <a href="/portfolio/studio-ww">
         <picture>
           <source srcset={vrijWerkMelleAvif} type="image/avif" />
@@ -103,7 +103,7 @@
       </a>
     </article>
 
-    <article class="home-img">
+    <article>
       <a href="/portfolio/diversen">
         <picture>
           <source srcset={vrijWerkModelAvif} type="image/avif" />
@@ -116,7 +116,7 @@
       </a>
     </article>
 
-    <article class="home-img">
+    <article>
       <a href="/portfolio/diversen">
         <picture>
           <source srcset={beach7Avif} type="image/avif" />
@@ -130,7 +130,7 @@
       </a>
     </article>
 
-    <article class="home-img">
+    <article>
       <a href="/portfolio/de-troubadour-interieurs">
         <picture>
           <source srcset={troubadourBAVif} type="image/avif" />
@@ -143,7 +143,7 @@
       </a>
     </article>
 
-    <article class="home-img">
+    <article>
       <a href="/portfolio/de-troubadour-interieurs">
         <picture>
           <source srcset={troubadourAAVif} type="image/avif" />
@@ -156,7 +156,7 @@
       </a>
     </article>
 
-    <article class="home-img">
+    <article>
       <a href="/portfolio/food">
         <picture>
           <source srcset={vrijWerkFoodAvif} type="image/avif" />

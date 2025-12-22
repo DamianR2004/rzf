@@ -75,7 +75,7 @@
     height: 100%;
     object-fit: cover;
     transition: 0.25s;
-    z-index: 0;
+    z-index: 1;
   }
 
   h3{

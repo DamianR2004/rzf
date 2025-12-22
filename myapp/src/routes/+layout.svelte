@@ -76,4 +76,8 @@
     color: #888;
     font-size: 0.9rem;
   }
+
+  @view-transition {
+  navigation: auto;
+}
 </style>
