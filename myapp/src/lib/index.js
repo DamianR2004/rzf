@@ -53,3 +53,22 @@ export { default as troubadourLogo } from "./images/opdrachtgevers/troubadour.pn
 export { default as vanuffelenLogo } from "./images/opdrachtgevers/vanuffelenlogo.png";
 export { default as vikingliftenLogo } from "./images/opdrachtgevers/vikingliftenlogo.png";
 export { default as vmeLogo } from "./images/opdrachtgevers/vmelogo.png";
+
+export { default as snel1 } from "./images/snel/snel1.webp";
+export { default as snel2 } from "./images/snel/snel2.webp";
+export { default as snel3 } from "./images/snel/snel3.webp";
+export { default as snel4 } from "./images/snel/snel4.webp";
+export { default as snel5 } from "./images/snel/snel5.webp";
+export { default as snel6 } from "./images/snel/snel6.webp";
+export { default as snel7 } from "./images/snel/snel7.webp";
+export { default as snel8 } from "./images/snel/snel8.webp";
+export { default as snel9 } from "./images/snel/snel9.webp";
+export { default as snel10 } from "./images/snel/snel10.webp";
+export { default as snel11 } from "./images/snel/snel11.webp";
+export { default as snel12 } from "./images/snel/snel12.webp";
+export { default as snel13 } from "./images/snel/snel13.webp";
+export { default as snel14 } from "./images/snel/snel14.webp";
+export { default as snel15 } from "./images/snel/snel15.webp";
+export { default as snel16 } from "./images/snel/snel16.webp";
+export { default as snel17 } from "./images/snel/snel17.webp";
+export { default as snel18 } from "./images/snel/snel18.webp";

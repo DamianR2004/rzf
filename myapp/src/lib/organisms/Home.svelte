@@ -235,7 +235,6 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 100%;
   height: 100svh;
   gap: 1.5em;
   padding: 1.5em;

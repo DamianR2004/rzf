@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { page } from '$app/stores'; // 1. Import the page store
+    import { page } from '$app/stores';
 
     let activeSection = '';
 
@@ -29,7 +29,7 @@
     <nav>
         <ul>
             <li>
-                <a href="/#home" 
+                <a href="#home" 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#home'} 
                    aria-label="Home">Home</a>
@@ -41,13 +41,13 @@
                    aria-label="Portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="/#over-mij" 
+                <a href="#over-mij" 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#over-mij'} 
                    aria-label="Over Mij">Over Mij</a>
             </li>
             <li>
-                <a href="/#contact" 
+                <a href="#contact" 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#contact'} 
                    aria-label="Contact">Contact</a>

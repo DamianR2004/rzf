@@ -36,7 +36,6 @@
 </section>
 
 <style>
-  /* Breadcrumbs */
   .breadcrumb {
     padding: 0 0.5rem;
     font: 1.2em sans-serif #555;
@@ -44,16 +43,13 @@
 
   .breadcrumb ol {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: end;
+    justify-content: start;
   }
 
   .breadcrumb li:not(:last-child)::after {
     display: inline-block;
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
     content: ">";
   }
 
@@ -72,7 +68,6 @@
     width: 100%;
     aspect-ratio: 4 / 4;
     overflow: hidden;
-    border-radius: 24px;
   }
 
   picture, img {
@@ -84,6 +79,11 @@
 
   h3{
     font-size: 1.5rem;
+  }
+
+  section h2{
+    font-size: 10vh;
+    text-align: center;
   }
 
   a{
