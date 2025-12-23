@@ -7,7 +7,7 @@
   // --- INSTELLINGEN ---
   // Zet deze op TRUE zolang je nog aan het bouwen bent.
   // Zet deze op FALSE als je live wilt gaan.
-  const ONDER_CONSTRUCTIE = false;
+  const ONDER_CONSTRUCTIE = true;
   // --------------------
 
   // De check: Is de site 'under construction' EN zijn we niet lokaal aan het testen?
