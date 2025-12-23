@@ -289,8 +289,8 @@
 .carousel {
     width: 100%;
     display: flex;
-    overflow: hidden;
     gap: 4em;
+    overflow: hidden;
 }
 .carousel::-webkit-scrollbar {
     display: none;

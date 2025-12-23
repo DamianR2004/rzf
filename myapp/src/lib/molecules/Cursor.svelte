@@ -39,7 +39,7 @@
     background: black;
     width: 2.5rem;
     height: 2.5rem;
-    z-index: 9999;
+    z-index: 1;
     position: fixed;
     pointer-events: none;
     border-radius: 50%;
@@ -54,11 +54,6 @@
   :global(a img):hover {
     z-index: 1600;
   }
-
-  :global(link):hover {
-    z-index: -1;
-  }
-
 
   @media (max-width: 768px) {
     .cursor {

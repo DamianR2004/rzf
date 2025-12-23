@@ -155,7 +155,7 @@
   } 
   
   section:nth-of-type(1) h2 {
-    font-size: 10vh;
+    font-size: 8vh;
     text-align: center;
   }
   

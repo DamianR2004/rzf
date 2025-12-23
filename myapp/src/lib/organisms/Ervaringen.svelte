@@ -9,7 +9,7 @@
             {#each data.ervaringen as ervaring}
                 <li>
                     <p>{@html ervaring.content}</p>
-                    <h3>{ervaring.title}</h3>
+                    <h4>{ervaring.title}</h4>
                 </li>
             {/each}
             </ul>
@@ -17,8 +17,9 @@
 </section>
 
 <style>
-    article {
+    ul {
         display: flex;
+        flex-direction: r;
         padding: 0 5%;
         gap: 4em;
     }
@@ -32,8 +33,8 @@
         gap: 1em;
     }
 
-    h3 {
-        font-size: 2rem;
+    h4 {
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -42,4 +43,14 @@
         font-size: 1rem;
         text-align: center;
     }
+
+
+    @media (max-width: 1024px) {
+        ul {
+            flex-direction: column;
+            padding: 0 5%;
+            gap: 2em;
+        }
+    }
+
 </style>

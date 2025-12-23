@@ -16,12 +16,11 @@
     display: grid;
     grid-template-columns: 545px 1fr;
     gap: 3rem;
-    padding: 5% 5rem;
+    padding: 0 5%;
   }
 
   img {
     width: 100%;
-    height: 545px;
     background-color: #161616;
     border-radius: 10px;
     z-index: 11;
@@ -31,7 +30,6 @@
     font-size: 2.1rem;
     margin: 0;
     color: black;
-    z-index: 101;
   }
 
   p span{
@@ -42,7 +40,7 @@
     color: black;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 1024px) {
     .wrapper {
       grid-template-columns: 1fr;
       gap: 3rem;
@@ -53,7 +51,7 @@
       width: 100%;
     }
     p {
-      font-size: 1rem;
+      font-size: 2vh;
     }
   }
 </style>

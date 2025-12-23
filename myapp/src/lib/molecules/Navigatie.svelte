@@ -72,7 +72,7 @@ header {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 header.hidden {
-    transform: translateY(200%); /* Slides down */
+    transform: translateY(200%); 
     opacity: 0;
     pointer-events: none;
 }  
@@ -94,7 +94,7 @@ li {
 a {
     color: white;      
     text-decoration: none;     
-    font-size: 3rem;
+    font-size: 2.5rem;
     white-space: nowrap;
 }
 

@@ -169,15 +169,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-
-        ul {
-            margin-right: 0;
-        }
-
         ul.slideshow {
             height: 150px;
             width: 150px;
             justify-self: start; 
+            margin-top: 3rem;
         }
 
         li {

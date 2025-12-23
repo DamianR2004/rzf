@@ -260,7 +260,6 @@ article {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    transform: translateZ(0);
 }
 
 article img {
@@ -268,10 +267,30 @@ article img {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
-  will-change: transform;
-  backface-visibility: hidden;
 }
 article:hover img{
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  article:nth-of-type(3), article:nth-of-type(4) {
+    visibility: hidden;
+  }
+
+  article {
+    max-width: 70%;
+    height: 20vh;
+  }
+
+  .logo {
+    max-width: 60dvw;
+  }
+} 
 </style>
