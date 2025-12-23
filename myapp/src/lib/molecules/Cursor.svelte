@@ -11,7 +11,7 @@
     };
     window.addEventListener("mousemove", moveCursor);
 
-    const interactiveSelector = "img, picture, a, .link, article";
+    const interactiveSelector = "img, picture, a, .link";
     const interactives = document.querySelectorAll(interactiveSelector);
 
     interactives.forEach((el) => {
@@ -54,6 +54,11 @@
   :global(a img):hover {
     z-index: 1600;
   }
+
+  :global(link):hover {
+    z-index: -1;
+  }
+
 
   @media (max-width: 768px) {
     .cursor {

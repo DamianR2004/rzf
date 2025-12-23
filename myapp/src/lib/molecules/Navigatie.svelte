@@ -29,7 +29,7 @@
     <nav>
         <ul>
             <li>
-                <a href="#home" 
+                <a href={$page.url.pathname === '/' ? '#home' : '/'} 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#home'} 
                    aria-label="Home">Home</a>
@@ -41,13 +41,13 @@
                    aria-label="Portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#over-mij" 
+                <a href={$page.url.pathname === '/' ? '#over-mij' : '/#over-mij'} 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#over-mij'} 
                    aria-label="Over Mij">Over Mij</a>
             </li>
             <li>
-                <a href="#contact" 
+                <a href={$page.url.pathname === '/' ? '#contact' : '/#contact'} 
                    class="link" 
                    class:active={$page.url.pathname === '/' && activeSection === '#contact'} 
                    aria-label="Contact">Contact</a>
@@ -67,7 +67,6 @@ header {
     background: transparent;
     z-index: 12;
     mix-blend-mode: difference; 
-
     transform: translateY(0);
     opacity: 1;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -81,8 +80,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4em;
     list-style: none;
+    padding: 0; 
+    margin: 0;  
 }
 
 li {
@@ -93,11 +94,26 @@ li {
 a {
     color: white;      
     text-decoration: none;     
-    margin: 5px;  
-    padding: 1.25rem; 
+    font-size: 3rem;
+    white-space: nowrap;
 }
 
 a.active {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        bottom: 3%; 
+    }
+
+    ul{
+        gap: 1em;
+    }
+    a {
+        padding: 0;
+        margin: 0; 
+        font-size: 1.3rem;
+    }
 }
 </style>

@@ -1,5 +1,5 @@
 <script> 
-    import {Cursor, Navigatie, Home, Footer, Recent, Over, Opdrachtgevers, Ervaringen, Albums } from "$lib/index.js"; 
+    import {Cursor, Navigatie, Home, Footer, Recent, Over, Opdrachtgevers, Ervaringen } from "$lib/index.js"; 
     
     let { data } = $props(); 
 </script> 
@@ -9,11 +9,8 @@
     <Navigatie />
     <Home /> 
     <Recent {data} />
-    
-
-
     <Over />
-    <!-- <Ervaringen data={data.ervaringen} /> -->
+    <Ervaringen {data} />
     <Opdrachtgevers />
     <Footer />
 </main>

@@ -1,5 +1,5 @@
 <script>
-  import { logo, vrijWerkMelleAvif, vrijWerkModelAvif, vrijWerkFoodAvif, troubadourAAVif, troubadourBAVif, vrijWerkMelleJpg, vrijWerkModelJpg, vrijWerkFoodJpg, beach7Avif, beach7Jpg, troubadourAJpg, troubadourBJpg } from "$lib/index.js";
+  import { logo, vrijWerkMellewebp, vrijWerkModelwebp, vrijWerkFoodwebp, troubadourAAwebp, troubadourBAwebp, vrijWerkMelleJpg, vrijWerkModelJpg, vrijWerkFoodJpg, beach7webp, beach7Jpg, troubadourAJpg, troubadourBJpg } from "$lib/index.js";
   import { gsap } from "gsap";
   import CustomEase from "gsap/CustomEase";
   import { onMount, onDestroy } from "svelte"; 
@@ -11,6 +11,7 @@
   onMount(() => {
     CustomEase.create("jump", "0.9, 0, 0.1, 1");
     
+    // --- 1. SETUP PARALLAX (Always runs) ---
     const articles = document.querySelectorAll('section#home article');
     const xTo = [];
     const yTo = [];
@@ -19,7 +20,6 @@
         if (i === 0 || i === 4) gsap.set(article, { xPercent: -20 });
         if (i === 1 || i === 5) gsap.set(article, { xPercent: 20 });
 
-        // Prepare the parallax animations
         const speed = (i % 2 === 0) ? 30 : 15; 
         article.dataset.speed = speed;
         
@@ -38,35 +38,51 @@
         });
     };
 
-    const preloaderImages = document.querySelectorAll(".preloader-images .img");
     const preloader = document.querySelector(".preloader");
-    const tl = gsap.timeline({ delay: 0.25 });
+    
+    // Check Local Storage
+    const lastSeen = localStorage.getItem("preloaderSeen");
+    const now = Date.now();
+    const timeLimit = 30 * 60 * 1000; 
 
-    preloaderImages.forEach((img, index) => {
-      tl.to(
-        img,
-        {
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          duration: .75,
-          ease: "jump"
-        },
-        index * 1
-      );
-    });
+    if (lastSeen && (now - lastSeen < timeLimit)) {
+        
+        gsap.set(preloader, { display: "none" });
+        window.addEventListener("mousemove", mouseMoveHandler);
 
-    tl.to(
-      preloader,
-        {
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-          duration: 1.5,
-          ease: "jump",
-        onComplete: () => {
-           gsap.set(preloader, { display: "none" });
-           window.addEventListener("mousemove", mouseMoveHandler);
-        }
-      },
-      "+=0.5"
-    );
+    } else {
+        const preloaderImages = document.querySelectorAll(".preloader-images .img");
+        const tl = gsap.timeline({ delay: 0.25 });
+
+        preloaderImages.forEach((img, index) => {
+            tl.to(
+                img,
+                {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                duration: .75,
+                ease: "jump"
+                },
+                index * 1
+            );
+        });
+
+        tl.to(
+            preloader,
+            {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+                duration: 1.5,
+                ease: "jump",
+                onComplete: () => {
+                    gsap.set(preloader, { display: "none" });
+                    window.addEventListener("mousemove", mouseMoveHandler);
+                    
+                    // SAVE TIMESTAMP: Reset the 30-minute timer now
+                    localStorage.setItem("preloaderSeen", Date.now());
+                }
+            },
+            "+=0.5"
+        );
+    }
   });
 
   onDestroy(() => {
@@ -78,11 +94,11 @@
 
 <div class="preloader">
   <div class="preloader-images">
-    <div class="img"><img src={vrijWerkMelleAvif} alt="" /></div>
-    <div class="img"><img src={vrijWerkModelAvif} alt="" /></div>
-    <div class="img"><img src={vrijWerkFoodAvif} alt="" /></div>
-    <div class="img"><img src={beach7Avif} alt="" /></div>
-    <div class="img"><img src={troubadourAAVif} alt="" /></div>
+    <div class="img"><img src={vrijWerkMellewebp} alt="" /></div>
+    <div class="img"><img src={vrijWerkModelwebp} alt="" /></div>
+    <div class="img"><img src={vrijWerkFoodwebp} alt="" /></div>
+    <div class="img"><img src={beach7webp} alt="" /></div>
+    <div class="img"><img src={troubadourAAwebp} alt="" /></div>
   </div>
 </div>
 
@@ -93,7 +109,7 @@
     <article>
       <a href="/portfolio/studio-ww">
         <picture>
-          <source srcset={vrijWerkMelleAvif} type="image/avif" />
+          <source srcset={vrijWerkMellewebp} type="image/webp" />
           <img src={vrijWerkMelleJpg} 
           width="800" 
           height="600"
@@ -106,7 +122,7 @@
     <article>
       <a href="/portfolio/diversen">
         <picture>
-          <source srcset={vrijWerkModelAvif} type="image/avif" />
+          <source srcset={vrijWerkModelwebp} type="image/webp" />
           <img src={vrijWerkModelJpg} 
           width="800" 
           height="600" 
@@ -119,7 +135,7 @@
     <article>
       <a href="/portfolio/diversen">
         <picture>
-          <source srcset={beach7Avif} type="image/avif" />
+          <source srcset={beach7webp} type="image/webp" />
           <img src={beach7Jpg} 
           width="800" 
           height="600"
@@ -133,7 +149,7 @@
     <article>
       <a href="/portfolio/de-troubadour-interieurs">
         <picture>
-          <source srcset={troubadourBAVif} type="image/avif" />
+          <source srcset={troubadourBAwebp} type="image/webp" />
           <img src={troubadourBJpg} 
           width="800" 
           height="600" 
@@ -146,7 +162,7 @@
     <article>
       <a href="/portfolio/de-troubadour-interieurs">
         <picture>
-          <source srcset={troubadourAAVif} type="image/avif" />
+          <source srcset={troubadourAAwebp} type="image/webp" />
           <img src={troubadourAJpg} 
           width="800" 
           height="600" 
@@ -159,7 +175,7 @@
     <article>
       <a href="/portfolio/food">
         <picture>
-          <source srcset={vrijWerkFoodAvif} type="image/avif" />
+          <source srcset={vrijWerkFoodwebp} type="image/webp" />
           <img src={vrijWerkFoodJpg} 
           width="800" 
           height="600" 

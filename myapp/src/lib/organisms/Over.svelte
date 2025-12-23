@@ -6,8 +6,8 @@
   <h2>Over mij</h2>
   <article class="wrapper">
     <img src="{portret}" alt="Portret Raimond Zoeter" />
-    <p>Mijn werkstijl kenmerkt zich door <i>aandacht</i> voor de mens, voor <i>detail</i> en voor de techniek. Ik stel mensen moeiteloos op hun <i>gemak</i> en ben <i>ontspannen</i> in de omgang. Dat zie je terug op de foto’s die ik maak. Daarnaast let ik op details en zet ik graag net een stapje extra. Ik hou ervan te spelen met <i>licht</i> om de foto naar een <i>hoger niveau</i> te tillen. 
-       Van interieur- en foodfotografie  tot bedrijfsmatige reportages en portretten; met ruim <i>20 jaar</i> ervaring in de studio en op locatie ben ik zeer breed inzetbaar.</p>
+    <p>Mijn werkstijl kenmerkt zich door <span>aandacht</span> voor de mens, voor <span>detail</span> en voor de techniek. Ik stel mensen moeiteloos op hun <span>gemak</span> en ben <span>ontspannen</span> in de omgang. Dat zie je terug op de foto’s die ik maak. Daarnaast let ik op details en zet ik graag net een stapje extra. Ik hou ervan te spelen met <span>licht</span> om de foto naar een <span>hoger niveau</span> te tillen. 
+       Van interieur- en foodfotografie  tot bedrijfsmatige reportages en portretten; met ruim <span>20 jaar</span> ervaring in de studio en op locatie ben ik zeer breed inzetbaar.</p>
   </article>
 </section>
 
@@ -30,26 +30,26 @@
   p {
     font-size: 2.1rem;
     margin: 0;
-    mix-blend-mode: difference;
-    color: #f0f0f0;
+    color: black;
     z-index: 101;
   }
 
-  p i{
+  p span{
     font-family: "Playwrite", sans-serif;
     text-decoration: underline;
     font-weight: 600;
+    font-style: italic;
+    color: black;
   }
 
-  /* responsive: stack on small screens */
   @media (max-width: 700px) {
     .wrapper {
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 3rem;
     }
 
     img{
-      height: 300px;
+      height: 100%;
       width: 100%;
     }
     p {

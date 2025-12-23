@@ -12,7 +12,7 @@
 </script>
 
 <footer id="contact">
-    <h2>Contact</h2>
+    <h2 class="visually_hidden">Contact</h2>
     <section>
         <ul>
             <li><h3>Socials</h3></li>

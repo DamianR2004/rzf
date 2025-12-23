@@ -12,7 +12,7 @@ export const load = async ({ params, fetch }) => {
         content(format: RENDERED)
         featuredImage {
           node {
-            sourceUrl(size: LARGE)
+            sourceUrl(size: MEDIUM)
             altText
           }
         }
@@ -38,7 +38,6 @@ export const load = async ({ params, fetch }) => {
     return url.replace(/-\d+x\d+(?=\.[a-z]{3,4}$)/i, '');
   };
 
-  // 1. Add Featured Image
   if (featuredImage?.node) {
     media.push({
       type: 'image',

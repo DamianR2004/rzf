@@ -56,7 +56,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 2em;
-    padding: 0 2em;
+    padding: 0 5%;
   }
 
   article:hover img {
@@ -96,4 +96,19 @@
   a:hover{
     color: black;
   }
+
+
+  @media (max-width: 1023px) {
+  .portfolio-grid {
+    grid-template-columns: 40vw 40vw;
+    justify-content: center;
+    padding: 0 5%;
+    margin: 0;
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+}
+
 </style>

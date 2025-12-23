@@ -7,7 +7,7 @@
   // --- INSTELLINGEN ---
   // Zet deze op TRUE zolang je nog aan het bouwen bent.
   // Zet deze op FALSE als je live wilt gaan.
-  const ONDER_CONSTRUCTIE = true;
+  const ONDER_CONSTRUCTIE = false;
   // --------------------
 
   // De check: Is de site 'under construction' EN zijn we niet lokaal aan het testen?
@@ -76,8 +76,4 @@
     color: #888;
     font-size: 0.9rem;
   }
-
-  @view-transition {
-  navigation: auto;
-}
 </style>

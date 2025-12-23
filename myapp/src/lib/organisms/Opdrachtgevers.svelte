@@ -7,72 +7,287 @@
 
     <div class="carousel">
     <ul class="group">
-        <li><img src={bouwrijkLogo} alt=""></li>
-        <li><img src={clijfLogo} alt=""></li>
-        <li><img src={codeblauwLogo} alt=""></li>
-        <li><img src={contentLogo} alt=""></li>
-        <li><img src={donaldosLogo} alt=""></li>
-        <li><img src={hippoLogo} alt=""></li>
-        <li><img src={ilsatLogo} alt=""></li>
-        <li><img src={intercheeseLogo} alt=""></li>
-        <li><img src={jumpretailLogo} alt=""></li>
-        <li><img src={lawinedesignLogo} alt=""></li>
-        <li><img src={leenbakkerLogo} alt=""></li>
+        <li>
+            <picture>
+                <source srcset={bouwrijkLogo} type="image/webp" />
+                <img src={bouwrijkLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={clijfLogo} type="image/webp" />
+                <img src={clijfLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={codeblauwLogo} type="image/webp" />
+                <img src={codeblauwLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={contentLogo} type="image/webp" />
+                <img src={contentLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={donaldosLogo} type="image/webp" />
+                <img src={donaldosLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={hippoLogo} type="image/webp" />
+                <img src={hippoLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={ilsatLogo} type="image/webp" />
+                <img src={ilsatLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={intercheeseLogo} type="image/webp" />
+                <img src={intercheeseLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={jumpretailLogo} type="image/webp" />
+                <img src={jumpretailLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+            <source srcset={lawinedesignLogo} type="image/webp" />
+            <img src={lawinedesignLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={leenbakkerLogo} type="image/webp" />
+                <img src={leenbakkerLogo} alt="">
+            </picture>
+        </li>
     </ul>
+    
     <ul class="group">
-        <li><img src={bouwrijkLogo} alt=""></li>
-        <li><img src={clijfLogo} alt=""></li>
-        <li><img src={codeblauwLogo} alt=""></li>
-        <li><img src={contentLogo} alt=""></li>
-        <li><img src={donaldosLogo} alt=""></li>
-        <li><img src={hippoLogo} alt=""></li>
-        <li><img src={ilsatLogo} alt=""></li>
-        <li><img src={intercheeseLogo} alt=""></li>
-        <li><img src={jumpretailLogo} alt=""></li>
-        <li><img src={lawinedesignLogo} alt=""></li>
-        <li><img src={leenbakkerLogo} alt=""></li>
+        <li>
+            <picture>
+                <source srcset={bouwrijkLogo} type="image/webp" />
+                <img src={bouwrijkLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={clijfLogo} type="image/webp" />
+                <img src={clijfLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={codeblauwLogo} type="image/webp" />
+                <img src={codeblauwLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={contentLogo} type="image/webp" />
+                <img src={contentLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={donaldosLogo} type="image/webp" />
+                <img src={donaldosLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={hippoLogo} type="image/webp" />
+                <img src={hippoLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={ilsatLogo} type="image/webp" />
+                <img src={ilsatLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={intercheeseLogo} type="image/webp" />
+                <img src={intercheeseLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={jumpretailLogo} type="image/webp" />
+                <img src={jumpretailLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+            <source srcset={lawinedesignLogo} type="image/webp" />
+            <img src={lawinedesignLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={leenbakkerLogo} type="image/webp" />
+                <img src={leenbakkerLogo} alt="">
+            </picture>
+        </li>
     </ul>
     </div>
 
     <div class="carousel">
     <ul class="grouptwo">
-        <li><img src={mboamersfoortLogo} alt=""></li>
-        <li><img src={noaberLogo} alt=""></li>
-        <li><img src={plenekantoorinrichtingLogo} alt=""></li>
-        <li><img src={pwrLogo} alt=""></li>
-        <li><img src={steetsLogo} alt=""></li>
-        <li><img src={studiovoorhuisLogo} alt=""></li>
-        <li><img src={thermocetLogo} alt=""></li>
-        <li><img src={troubadourLogo} alt=""></li>
-        <li><img src={vanuffelenLogo} alt=""></li>
-        <li><img src={vikingliftenLogo} alt=""></li>
-        <li><img src={vmeLogo} alt=""></li>
+        <li>
+            <picture>
+                <source srcset={mboamersfoortLogo} type="image/webp" />
+                <img src={mboamersfoortLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={noaberLogo} type="image/webp" />
+                <img src={noaberLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={plenekantoorinrichtingLogo} type="image/webp" />
+                <img src={plenekantoorinrichtingLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={pwrLogo} type="image/webp" />
+                <img src={pwrLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={steetsLogo} type="image/webp" />
+                <img src={steetsLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={studiovoorhuisLogo} type="image/webp" />
+                <img src={studiovoorhuisLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={thermocetLogo} type="image/webp" />
+                <img src={thermocetLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={troubadourLogo} type="image/webp" />
+                <img src={troubadourLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={vanuffelenLogo} type="image/webp" />
+                <img src={vanuffelenLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={vikingliftenLogo} type="image/webp" />
+                <img src={vikingliftenLogo} alt="">
+            </picture>
+        </li>       
+        <li>
+            <picture>
+                <source srcset={vmeLogo} type="image/webp" />
+                <img src={vmeLogo} alt="">
+            </picture>
+        </li>
     </ul>
     <ul class="grouptwo">
-        <li><img src={mboamersfoortLogo} alt=""></li>
-        <li><img src={noaberLogo} alt=""></li>
-        <li><img src={plenekantoorinrichtingLogo} alt=""></li>
-        <li><img src={pwrLogo} alt=""></li>
-        <li><img src={steetsLogo} alt=""></li>
-        <li><img src={studiovoorhuisLogo} alt=""></li>
-        <li><img src={thermocetLogo} alt=""></li>
-        <li><img src={troubadourLogo} alt=""></li>
-        <li><img src={vanuffelenLogo} alt=""></li>
-        <li><img src={vikingliftenLogo} alt=""></li>
-        <li><img src={vmeLogo} alt=""></li>
+        <li>
+            <picture>
+                <source srcset={mboamersfoortLogo} type="image/webp" />
+                <img src={mboamersfoortLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={noaberLogo} type="image/webp" />
+                <img src={noaberLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={plenekantoorinrichtingLogo} type="image/webp" />
+                <img src={plenekantoorinrichtingLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={pwrLogo} type="image/webp" />
+                <img src={pwrLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={steetsLogo} type="image/webp" />
+                <img src={steetsLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={studiovoorhuisLogo} type="image/webp" />
+                <img src={studiovoorhuisLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={thermocetLogo} type="image/webp" />
+                <img src={thermocetLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={troubadourLogo} type="image/webp" />
+                <img src={troubadourLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={vanuffelenLogo} type="image/webp" />
+                <img src={vanuffelenLogo} alt="">
+            </picture>
+        </li>
+        <li>
+            <picture>
+                <source srcset={vikingliftenLogo} type="image/webp" />
+                <img src={vikingliftenLogo} alt="">
+            </picture>
+        </li>       
+        <li>
+            <picture>
+                <source srcset={vmeLogo} type="image/webp" />
+                <img src={vmeLogo} alt="">
+            </picture>
+        </li>
     </ul>
     </div>
 </section>
 
 <style>
-
-section{
-    overflow: hidden;
-    padding: 5% 0;
-}
-
 .carousel {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     overflow: hidden;
     gap: 4em;
@@ -84,7 +299,6 @@ section{
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: center;
     gap: 4em;
     animation: spin 45s linear infinite;
     margin: 0;
@@ -96,9 +310,7 @@ section{
 }
 
 li{
-    align-content: center;
     gap: 1em;
-    justify-content: center;
 }
 
 @keyframes spin{
@@ -110,4 +322,14 @@ li{
     from { translate: -100%; }
     to { translate: 0%; }
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        gap: 2em;
+    }
+    .group, .grouptwo{
+        gap: 2em;
+    }
+}
+
 </style>

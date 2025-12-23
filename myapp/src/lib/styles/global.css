@@ -10,7 +10,7 @@
   font-display: swap;
 }
 
-:root{
+:root{  
   --color-background-main: #f0f0f0;
   --color-background-secondary: #161616;
   --text-color: black;
@@ -24,7 +24,7 @@
 
 html{
   scroll-behavior: smooth;
-  cursor: none !important;
+  cursor: none;
 }
 
 body {
@@ -35,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  cursor: none !important;
+  cursor: none;
   font-weight: normal;
 }
 
@@ -44,7 +44,7 @@ h1{
 }
 
 h2{
-  font-size: 5vh;
+  font-size: 4vh;
   padding: 0 5%;
 }
 
@@ -71,3 +71,4 @@ a:hover {
   white-space: nowrap;
   width: 1px;
 }
+

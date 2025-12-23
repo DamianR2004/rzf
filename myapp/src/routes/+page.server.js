@@ -15,6 +15,12 @@ export const load = async ({ fetch }) => {
           }
         }
       }
+        ervaringen(first: 3) {
+        nodes {
+          title
+          content
+        }
+      }
     }
   `;
 
@@ -26,6 +32,12 @@ export const load = async ({ fetch }) => {
 
   const result = await response.json();
   const albumsRaw = result.data?.albums?.nodes || [];
+  const ervaringenRaw = result.data?.ervaringen?.nodes || [];
+
+  const ervaringen = ervaringenRaw.map(ervaring => ({
+    title: ervaring.title,
+    content: ervaring.content
+  }));
 
   const albums = albumsRaw.map(album => ({
     title: album.title,
@@ -34,5 +46,5 @@ export const load = async ({ fetch }) => {
     alt: album.featuredImage?.node?.altText || album.title
   }));
 
-  return { albums };
+  return { albums, ervaringen };
 };
