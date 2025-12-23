@@ -3,7 +3,7 @@
 </script>
 
 <section id="home">
-    <h2>Recent Werk</h2>
+    <h2>Recent werk</h2>
     <ul>
         {#each data.albums as album}
             {#if album.cover} 
