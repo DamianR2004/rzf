@@ -3,14 +3,13 @@
     
     let { data } = $props(); 
 </script> 
-
-<main>
-    <Cursor />
     <Navigatie />
+    <main>
+    <Cursor />
     <Home /> 
     <Recent {data} />
     <Over />
     <Ervaringen {data} />
     <Opdrachtgevers />
+    </main>
     <Footer />
-</main>
