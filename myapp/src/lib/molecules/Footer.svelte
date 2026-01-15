@@ -35,7 +35,7 @@
         <ul>
             <li><h3>Navigatie</h3></li>
             <li><a href="#home" class="link" aria-label="Home">Home</a></li>
-            <li><a href="#portfolio" class="link" aria-label="Portfolio">Portfolio</a></li>
+            <li><a href="/portfolio" class="link" aria-label="Portfolio">Portfolio</a></li>
             <li><a href="#over-mij" class="link" aria-label="Over mij">Over mij</a></li>
             <li><a href="#contact" class="link" aria-label="Contact">Contact</a></li>
         </ul>
@@ -54,7 +54,7 @@
     </div>
 
     <div>
-        <p>© 2025 Raimond Zoeter Fotografie</p>
+        <p>©2026 Raimond Zoeter Fotografie</p>
         <p>Designed and developed <a href="https://www.bydr.studio" target="_blank">bydr.studio</a></p>
     </div>
 </footer>
